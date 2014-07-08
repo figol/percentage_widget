@@ -53,7 +53,7 @@ openerp.web_percentage_widget = function(instance) {
          * @private
          */
         _format: function (row_data, options) {
-            var _value = row_data[this.id].value;
+            var _value = parseFloat(row_data[this.id].value);
             if (isNaN(_value)) {
                 return null;
             }
