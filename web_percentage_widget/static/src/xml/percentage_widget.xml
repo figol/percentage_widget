@@ -12,7 +12,7 @@
                     t-att-tabindex="widget.node.attrs.tabindex"
                     t-att-autofocus="widget.node.attrs.autofocus"
                     t-att-placeholder="widget.node.attrs.placeholder"
-                t-att-maxlength="widget.field.size"
+                	t-att-maxlength="widget.field.size"
                 />
             </div>
         </t>
