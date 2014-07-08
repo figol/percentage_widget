@@ -17,7 +17,7 @@ Percentage Widget For OpenERP 7.0
 3. install
 
 使用方法：
-<field name="margin" widget="percentage" 
+在field标签中，增加widget="percentage"属性即可
 
 效果：
 margin: 1.1  -->  110%
