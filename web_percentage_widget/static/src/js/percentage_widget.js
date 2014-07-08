@@ -35,7 +35,7 @@ openerp.web_percentage_widget = function(instance) {
             } else {
                 var _value = parseFloat(this.get('value'));
                 if (isNaN(_value)) {
-                    this.$el.find(".percentage_filed").text();
+                    this.$el.find(".percentage_filed").text('');
                 }
                 else{
                     this.$el.find(".percentage_filed").text((_value*100).toFixed(2) + '%');
