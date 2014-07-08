@@ -1,0 +1,21 @@
+<template>
+<t t-name="PercentageWidget">
+    <span class="oe_form_field oe_form_field_url" t-att-style="widget.node.attrs.style">
+        <span class="oe_form_percentage"  t-if="widget.get('effective_readonly')" >
+            <span class="percentage_filed"></span>
+        </span>
+
+        <t t-if="!widget.get('effective_readonly')">
+            <div>
+                <input type="text"
+                    t-att-id="widget.id_for_label"
+                    t-att-tabindex="widget.node.attrs.tabindex"
+                    t-att-autofocus="widget.node.attrs.autofocus"
+                    t-att-placeholder="widget.node.attrs.placeholder"
+                t-att-maxlength="widget.field.size"
+                />
+            </div>
+        </t>
+    </span>
+</t>
+</template>
