@@ -24,3 +24,24 @@ margin: 1.1  -->  110%
 margin: 0.2  -->  20%
 
 </pre>
+
+--------------------------------------------------------
+Main Functions:<br/>
+--------------------------------------------------------
+Percentage points in the form of a digital display.<br />
+
+<pre>
+
+Installation Method:
+1. Download source code
+2. Update module list
+3. Install ;)
+
+How to use:
+In `field` tags, add the widget="percentage" attribute.
+
+Effects:
+Number: 1.1  -->  110%
+Number: 0.2  -->  20%
+
+</pre>
