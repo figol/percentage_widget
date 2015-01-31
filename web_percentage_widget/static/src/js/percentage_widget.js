@@ -27,6 +27,16 @@ openerp.web_percentage_widget = function(instance) {
     // form view
     instance.web.form.widgets.add('percentage', 'instance.web_percentage_widget.PercentageWidget');
     instance.web_percentage_widget.PercentageWidget = instance.web.form.FieldFloat.extend({
+
+        list_of_per: {
+            'percent' :  ['%', 100],
+             'permil': ['&#8240;', 1000]
+        },
+
+        options : {
+            'sign': 'percent'
+        },
+
         display_name: _lt('PercentageWidget'),
         template: "PercentageWidget",
         render_value: function() {
@@ -38,7 +48,7 @@ openerp.web_percentage_widget = function(instance) {
                     this.$el.find(".percentage_filed").text('');
                 }
                 else{
-                    this.$el.find(".percentage_filed").text((_value*100).toFixed(2) + '%');
+                    this.$el.find(".percentage_filed").text((_value*this.list_of_per[this.options.sign][1]).toFixed(2) + this.list_of_per[this.options.sign][0]);
                 }
             }
         }
